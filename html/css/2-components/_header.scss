@@ -1,0 +1,94 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 19px;
+    position: relative;
+    @include respond-to-min(750){
+        padding: 35px 55px;
+    }
+    figure{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        &.logo1{
+            max-width: 118px;
+            flex-shrink: 0;
+            @include respond-to-min(750){
+                max-width: 270px;
+            }
+        }
+        &.logo2{
+            max-width: 76px;
+            flex-shrink: 0;
+            @include respond-to-min(750){
+                max-width: 211px;
+            }
+        }
+    }
+    nav{
+        width: 100%;
+        display: none;
+        padding: 0.625rem 0;
+        @include respond-to-min(750){
+            display: flex;
+            justify-content: space-between;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            margin-left: 60px !important;
+            li{
+                margin-right: 40px;
+                a{
+                    font-family: 'Lato', sans-serif;
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: bold;
+                    display: inline-block;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    &.open{
+        
+        @include respond-to-max(750){
+            nav{
+                width: 279px;
+                display: flex;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0;
+                z-index: 99;
+                ul{
+                    flex-direction: column;
+                    background: #fff;
+                    width: 100%;
+                    margin: 0;
+                    padding-top: 71px;
+                    li{
+                        width: 100%;
+                        a{
+                            width: 100%;
+                            background: #98cbfb;
+                            display: block;
+                            font-size: 20px;
+                            padding: 19px;
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.bg-base{
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    @include respond-to-min(750){
+        flex-direction: row;
+    }
+    .blue{
+        width: 100%;
+        height: 50%;
+        background: radial-gradient(76.7% 56.35% at 50% 50%, rgba(144, 226, 238, 0.63) 0%, rgba(73, 195, 225, 0.63) 100%), linear-gradient(193.49deg, #4CB9C3 15.3%, #0D72C5 98.65%);
+        @include respond-to-min(750){
+            width: 50%;
+            height: 100%;
+        }
+    }
+    .gray{
+        width: 100%;
+        height: 50%;
+        background: #4a4a4a;
+        @include respond-to-min(750){
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 3px 0px 29px rgba(#010101, 0.27);
+    @include respond-to-min(750){
+        font-size: 72px;
+    }
+}
+h3{
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    @include respond-to-min(750){
+        font-size: 21px;
+    }
+}

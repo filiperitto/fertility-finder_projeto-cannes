@@ -1,0 +1,30 @@
+footer{
+    background-color: #F0F0F0;
+    .container{
+        padding: 20px 20px;
+        .cont-header{
+            display: flex;
+            img{
+                width: 100%;
+                max-width: 40px;
+                height: auto;
+            }
+            p{
+                font-size: 15px;
+                line-height: 23px;
+                color: #8E908E;
+                margin: 0;
+                padding: 0;
+                margin-left: 11px;
+            }
+        }
+        .cont-footer{
+            p{
+                font-size: 11px;
+                color: #333;
+                line-height: 18px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
